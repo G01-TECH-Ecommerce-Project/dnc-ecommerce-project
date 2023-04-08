@@ -27,7 +27,7 @@ export const PRODUCTS_MOCK = [
         id: 4,
         imgPath: "/public/product-4.png",
         imgPathDetail: "../../../public/product-4.png",
-        title: "Cropped manga preta |  by DNC",
+        title: "Jogo God of War: Playstation Hits",
         price: "R$ 100,00"
     },
     {
