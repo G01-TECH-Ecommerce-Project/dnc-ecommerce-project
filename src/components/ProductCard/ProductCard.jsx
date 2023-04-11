@@ -1,0 +1,9 @@
+import './index.scss';
+
+const ProductCard = () => {
+  return (
+    <div>ProductCard</div>
+  )
+}
+
+export default ProductCard
