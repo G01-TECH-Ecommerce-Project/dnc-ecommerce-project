@@ -47,7 +47,7 @@ const Login = () => {
                 <h2>você pode entrar com seu CPF</h2>
             </section>
             <form onSubmit={checkForm} className="form" id="form">
-                <label htmlFor="name" className='form__label'>Nome Completo:</label>
+                <label htmlFor="name" className='form__label'>Informe nome ou cpf:</label>
 
                 <input className='form__input' type="text" id="name" name="name" placeholder="Nome ou CPF" autoComplete="off" />
                 <span className='form__error'>*Campo obrigatório*</span>
