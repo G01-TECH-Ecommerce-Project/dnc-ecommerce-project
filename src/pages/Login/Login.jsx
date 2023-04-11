@@ -1,7 +1,43 @@
 import './index.scss';
 import HeaderMenu from '../../components/HeaderMenu/HeaderMenu';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
+
+    function checkForm(event) {
+        event.preventDefault();
+
+        const form = event.target;
+
+        const inputs = form.querySelectorAll("input");
+
+        let camposVazios = true;
+
+        inputs.forEach(input => {
+            if (input.value === "") {
+                input.style.border = "2px solid red"
+                if (input.nextSibling && input.nextSibling.nodeName === 'SPAN') {
+                    camposVazios = false;
+                    const span = input.nextSibling;
+
+                    span.style.opacity = "1";
+                }
+            } else {
+                input.style.border = "2px solid black"
+                const span = input.nextSibling;
+
+                span.style.opacity = "0";
+            }
+        });
+
+        const error = form.querySelector('.form__error--all');
+        if (camposVazios) {
+            <Link to={'/home'}></Link>
+        } else {
+            error.style.opacity = '1';
+        }
+    };
+
     return (
         <>
             <HeaderMenu></HeaderMenu>
@@ -10,7 +46,7 @@ const Login = () => {
                 <h1>Acesse com seu login ou cadastre-se!</h1>
                 <h2>você pode entrar com seu CPF</h2>
             </section>
-            <form /*onSubmit={checkForm}*/ className="form" id="form">
+            <form onSubmit={checkForm} className="form" id="form">
                 <label htmlFor="name" className='form__label'>Nome Completo:</label>
 
                 <input className='form__input' type="text" id="name" name="name" placeholder="Nome ou CPF" autoComplete="off" />
