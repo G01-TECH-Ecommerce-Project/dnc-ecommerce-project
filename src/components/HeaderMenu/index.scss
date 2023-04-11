@@ -1,1 +1,11 @@
 @use '../../assets/sass/variables' as *;
+
+.header {
+    height: 157px;
+    background-color: $header-background;
+
+    &__logo {
+        margin-left: 56px;
+        margin-top: 27px;
+    }
+}
