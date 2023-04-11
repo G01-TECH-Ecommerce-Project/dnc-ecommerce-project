@@ -1,8 +1,21 @@
 import './index.scss';
+import HeaderMenuDetail from '../../components/HeaderMenuDetail/HeaderMenuDetail';
+import Footer from '../../components/Footer/Footer';
+import Banner from '../../assets/imgs/home-banner.png';
 
-const Home = () => {
+const Home = ({data}) => {
   return (
-    <div>Home</div>
+      <>
+        <HeaderMenuDetail/>
+        <div className='home'>
+          <div className="home__banner">
+            <img src={Banner} alt="Banner Playstation" />
+          </div>
+          <div className="home__products">
+          </div>
+        </div>
+        <Footer/>
+      </>
   )
 }
 
