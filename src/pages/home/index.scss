@@ -1,18 +1,2 @@
 @use '../../assets/sass/variables' as *;
 
-
-.home{
-    background-color: $header-background;
-
-    &__banner{
-        max-width: 100%;
-
-        img{
-            width: 100%;
-            max-height: 400px;
-            height: auto;
-        }
-    }
-
-    
-}
