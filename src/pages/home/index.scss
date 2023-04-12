@@ -14,5 +14,17 @@
         }
     }
 
+    &__productCard {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1rem));
+        gap: 1rem;
+
+        justify-items: center;
+        justify-content: center;
+
+        padding: 3rem 0 3rem 0;
+        background-color: $header-background;
+    }
+
     
 }
