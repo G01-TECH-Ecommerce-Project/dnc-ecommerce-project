@@ -1,1 +1,19 @@
 @use '../../assets/sass/variables' as *;
+
+.footer{
+    background-color: $contrast-color;
+    display: flex;
+    align-items: center;
+    padding: 2em 5em;
+
+        &-img{
+            max-width: 150px;
+        }
+
+        &-info{
+            color: $white;
+            font-size: 1.3em;
+            padding-top: 1em;
+            padding-left: 5em;
+        }
+}
