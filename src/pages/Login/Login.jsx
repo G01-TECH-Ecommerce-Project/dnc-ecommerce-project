@@ -8,9 +8,8 @@ const Login = () => {
         event.preventDefault();
 
         const form = event.target;
-
-        const inputs = form.querySelectorAll("input");
-
+        const inputs = Array.from(document.querySelectorAll("input"));
+        const error = document.querySelector('.form__error--all');
         let camposVazios = true;
 
         inputs.forEach(input => {
@@ -25,14 +24,14 @@ const Login = () => {
             } else {
                 input.style.border = "2px solid black"
                 const span = input.nextSibling;
-
                 span.style.opacity = "0";
             }
         });
 
-        const error = form.querySelector('.form__error--all');
+        console.log(camposVazios);
         if (camposVazios) {
-            <Link to={'/home'}></Link>
+            error.innerHTML = 'Sucesso!'
+            error.style.color = 'green';
         } else {
             error.style.opacity = '1';
         }
@@ -47,18 +46,20 @@ const Login = () => {
                 <h2>você pode entrar com seu CPF</h2>
             </section>
             <form onSubmit={checkForm} className="form" id="form">
-                <label htmlFor="name" className='form__label'>Informe nome ou cpf:</label>
-
-                <input className='form__input' type="text" id="name" name="name" placeholder="Nome ou CPF" autoComplete="off" />
-                <span className='form__error'>*Campo obrigatório*</span>
-
-                <label htmlFor="password" className='form__label'>Senha:</label>
-
-                <input className='form__input' type="password" id="password" name="password" placeholder="•••••••••" autoComplete="off" />
-                <span className='form__error'>*Campo obrigatório*</span>
-
-                <button type="submit" value="Cadastrar" className='form__submit'>Entrar</button>
+                <div className="form__field">
+                    <label htmlFor="name" className='form__label'>Digite seu CPF:</label>
+                    <input className='form__input' type="text" id="name" name="name" placeholder="Nome ou CPF" autoComplete="off" />
+                    <span className='form__error'>*Campo obrigatório*</span>
+                </div>
+                <div className="form__field">
+                    <label htmlFor="password" className='form__label'>Senha:</label>
+                    <input className='form__input' type="password" id="password" name="password" placeholder="•••••••••" autoComplete="off" />
+                    <span className='form__error'>*Campo obrigatório*</span>
+                </div>
+                <div className="form__field">
+                <button type="submit" value="Cadastrar" className='form__submit'><Link to='/home'>Entrar</Link></button>
                 <span className='form__error form__error--all'>*Preenche todos os campos*</span>
+                </div>
             </form>
         </>
     )
