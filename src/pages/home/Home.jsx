@@ -1,25 +1,24 @@
-import './index.scss';
-import Footer from '../../components/Footer/Footer';
-import Banner from '../../assets/imgs/home-banner.png';
-import ProductCard from '../../components/ProductCard/ProductCard';
-import HeaderMenu from '../../components/HeaderMenu/HeaderMenu';
-
+import "./index.scss";
+import Footer from "../../components/Footer/Footer";
+import ProductCard from "../../components/ProductCard/ProductCard";
+import Banner from "../../components/Banner/Banner";
+import HeaderMenu from "../../components/HeaderMenu/HeaderMenu";
 
 const Home = ({ data }) => {
   return (
     <>
-      <HeaderMenu />
-      <div className='home'>
-        <div className="home__banner">
-          <img src={Banner} alt="Banner Playstation" />
+      <HeaderMenu/>
+      <div className="home">
+        <Banner/>
+        <div className="home__productCard">
+          {data.map((product) => (
+            <ProductCard key={product.id} data={product} />
+          ))}
         </div>
-      </div>
-      <div className="home__productCard">
-        {data.map(product => (<ProductCard key={product.id} data={product} />))}
       </div>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

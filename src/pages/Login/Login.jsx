@@ -1,13 +1,13 @@
 import './index.scss';
 import HeaderMenu from '../../components/HeaderMenu/HeaderMenu';
 import { Link } from 'react-router-dom';
+import Logo from '../../assets/imgs/logo.png';
 
 const Login = () => {
 
     function checkForm(event) {
         event.preventDefault();
-
-        const form = event.target;
+        
         const inputs = Array.from(document.querySelectorAll("input"));
         const error = document.querySelector('.form__error--all');
         let camposVazios = true;
@@ -39,8 +39,9 @@ const Login = () => {
 
     return (
         <>
-            <HeaderMenu></HeaderMenu>
-
+            <header className="header__login">
+                <img src={Logo} alt="" />
+            </header>
             <section className='section'>
                 <h1>Acesse com seu login ou cadastre-se!</h1>
                 <h2>você pode entrar com seu CPF</h2>

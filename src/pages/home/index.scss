@@ -2,28 +2,15 @@
 
 .home{
     background-color: $header-background;
-
-    &__banner{
-        max-width: 100%;
-
-        img{
-            width: 100%;
-            max-height: 400px;
-            height: auto;
-        }
-    }
+    justify-content: center;
 
     &__productCard {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(25rem, 1rem));
-        gap: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        column-gap: 5em;
+        row-gap: 3em;
+        padding: 3rem 5em;
 
-        justify-items: center;
-        justify-content: center;
-
-        padding: 3rem 0 3rem 0;
-        background-color: $header-background;
     }
-
-    
 }
