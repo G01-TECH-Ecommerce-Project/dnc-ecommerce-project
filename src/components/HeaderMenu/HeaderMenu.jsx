@@ -1,20 +1,31 @@
-import LogoDNC from '../../assets/imgs/logo.png';
-import HeaderMenuDetail from '../HeaderMenuDetail/HeaderMenuDetail';
-import SearchBar from '../SearchBar/SearchBar';
-import './index.scss'
+import "./index.scss";
+import logo from '../../assets/imgs/logo.png';
+import cartLogo from '../../assets/imgs/cart-icon.png';
+import Search from "../Search/Search";
+import { Fragment } from "react";
+import { Link } from "react-router-dom";
 
-function HeaderMenu({ homeInfo }) {
-    return (
-        <header className='header'>
-            <img src={LogoDNC} alt="" className='header__logo'/>
-            {
-                homeInfo && <>
-                    <SearchBar></SearchBar>
-                    <HeaderMenuDetail></HeaderMenuDetail>
-                </>
-            }
-        </header>
-    )
-}
+const HeaderMenu = () => {
+  return (
+    <header className="header__menu">
+      <div className="header__menu-logo">
+        <img src={logo} alt="logo" className="header-menu__logo"/>
+        <Search />
+        <img src={cartLogo} alt="cartLogo"  className="header-menu__cart"/>
+      </div>
+
+      <div className="header__menu-options">
+      <ul>
+        <li><strong>Novidades</strong></li>
+        <li>Jogos</li>
+        <li>Video Games</li>
+        <li>Mesas Gamer</li>
+        <li>Promoções</li>
+        <li>Atendimento</li>
+      </ul>
+      </div>
+    </header>
+  );
+};
 
 export default HeaderMenu;
