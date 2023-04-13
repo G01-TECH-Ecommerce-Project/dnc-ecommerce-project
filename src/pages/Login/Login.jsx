@@ -6,8 +6,7 @@ const Login = () => {
 
     function checkForm(event) {
         event.preventDefault();
-
-        const form = event.target;
+        
         const inputs = Array.from(document.querySelectorAll("input"));
         const error = document.querySelector('.form__error--all');
         let camposVazios = true;
