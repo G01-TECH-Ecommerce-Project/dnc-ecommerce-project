@@ -26,10 +26,6 @@ Ao clicar em "Finalizar Compra" na página de detalhes do produto, os usuários 
 O modal permite aos usuários escolher entre continuar com o pedido ou finalizar a compra.
 Se os usuários optarem por finalizar a compra, serão solicitadas informações pessoais, como nome, forma de pagamento, endereço de entrega, etc.
 
-#### Página de Rastreamento de Pedido
-Após finalizar a compra, os usuários são redirecionados para a página de rastreamento de pedido.
-Nessa página, é exibido um número de pedido fictício e uma imagem dos correios, que serve como link para o site dos correios para rastreamento do pedido simulado.
-
 ## Instalação e Execução
 - Clone o repositório para sua máquina local.
 - Navegue até o diretório do projeto e execute o comando npm install para instalar as dependências.
