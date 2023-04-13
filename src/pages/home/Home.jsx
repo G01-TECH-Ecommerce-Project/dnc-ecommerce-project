@@ -4,6 +4,7 @@ import Footer from '../../components/Footer/Footer';
 import Banner from '../../assets/imgs/home-banner.png';
 import ProductCard from '../../components/ProductCard/ProductCard';
 
+
 const Home = ({ data }) => {
   return (
     <>
