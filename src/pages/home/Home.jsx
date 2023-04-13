@@ -1,13 +1,13 @@
 import "./index.scss";
-import HeaderMenuDetail from "../../components/HeaderMenuDetail/HeaderMenuDetail";
 import Footer from "../../components/Footer/Footer";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import Banner from "../../components/Banner/Banner";
+import HeaderMenu from "../../components/HeaderMenu/HeaderMenu";
 
 const Home = ({ data }) => {
   return (
     <>
-      <HeaderMenuDetail />
+      <HeaderMenu/>
       <div className="home">
         <Banner/>
         <div className="home__productCard">

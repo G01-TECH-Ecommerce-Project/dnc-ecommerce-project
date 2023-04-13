@@ -2,8 +2,6 @@ import "./index.scss";
 import logo from '../../assets/imgs/logo.png';
 import cartLogo from '../../assets/imgs/cart-icon.png';
 import Search from "../Search/Search";
-import { Fragment } from "react";
-import { Link } from "react-router-dom";
 
 const HeaderMenu = () => {
   return (
