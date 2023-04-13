@@ -1,12 +1,14 @@
 # E-commerce de Jogos e Video Games
-Este é um projeto de um e-commerce de jogos e video games utilizando a biblioteca React JS. O objetivo é criar uma aplicação web interativa que permita aos usuários realizar compras de jogos e video games, com várias funcionalidades, como login com verificação de input, página de produtos com um banner de fotos em movimento, detalhes do produto, modal de finalização de compra, preenchimento de informações pessoais e página de rastreamento de pedidos simulados.
-
+Este é um projeto de um e-commerce de jogos e video games utilizando a biblioteca React JS. O objetivo é criar uma aplicação web interativa que permita aos usuários realizar compras de jogos e video games, com várias funcionalidades, como login com verificação de input, página de produtos com um banner de fotos em movimento, detalhes do produto, modal de finalização de compra, preenchimento de informações pessoais.
 ## Tecnologias Utilizadas
 - React JS
+- React Router
 - HTML5
 - SASS
-- React Router
-- Mock (Simulador de Banco de Dados)
+
+## Planejamento
+Dividimos o projeto em pages(views) e a partir disto fizemos a componentização para dividir uniformemente as tarefas. 
+O tempo proposto era terminar o projeto em 2 semanas. As entregas tiveram um turnover de 2 dias em média, de acordo com disponibilidade de cada membro. O tempo de sobra foi gasto para melhorar funcionalidades e aparência de itens da página.
 
 ## Funcionalidades
 ### Página de Login
@@ -32,9 +34,9 @@ Nessa página, é exibido um número de pedido fictício e uma imagem dos correi
 
 ## Instalação e Execução
 - Clone o repositório para sua máquina local.
-- Navegue até o diretório do projeto e execute o comando npm install para instalar as dependências.
-- Após a instalação, execute o comando npm start para iniciar a aplicação em seu navegador.
-- Acesse a aplicação no navegador, utilizando a URL http://localhost:3000.
+- Navegue até o diretório do projeto e execute o comando ```npm install``` para instalar as dependências.
+- Após a instalação, execute o comando ```npm run dev``` para iniciar a aplicação em seu navegador.
+- Acesse a aplicação no navegador, utilizando a URL ```http://localhost:xxxx```, onde "xxxx" é a porta aberta em seu servidor localhost.
 
 ## Considerações Finais
 Este projeto é apenas uma simulação de um e-commerce de jogos e video games, com funcionalidades básicas implementadas utilizando React JS. É uma aplicação em constante evolução, com potencial para adição de mais recursos, como integração com APIs de pagamento, gerenciamento de estado mais avançado, entre outros. Fique à vontade para contribuir ou utilizar este projeto como base para o desenvolvimento de sua própria aplicação de comércio eletrônico.
