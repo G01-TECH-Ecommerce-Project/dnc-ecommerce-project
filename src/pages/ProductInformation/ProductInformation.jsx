@@ -1,5 +1,5 @@
 import './index.scss';
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import HeaderMenu from '../../components/HeaderMenu/HeaderMenu'
 import ProductDetail from '../../components/ProductDetail/ProductDetail'
 import Footer from '../../components/Footer/Footer'
