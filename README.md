@@ -15,7 +15,7 @@ Há uma verificação de input para garantir que os campos de login estejam pree
 
 #### Página de Produtos
 Os usuários podem navegar pela página de produtos para visualizar os jogos e video games disponíveis para compra.
-Há um banner de fotos em movimento que exibe imagens dos jogos em destaque, tornando a página mais atraente e dinâmica.
+Há um banner com uma imagem de um jogo, tornando a página mais atraente.
 
 #### Página de Detalhes do Produto
 Os usuários podem acessar a página de detalhes do produto ao clicar em um item na página de produtos.
