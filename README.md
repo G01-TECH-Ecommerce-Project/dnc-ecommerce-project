@@ -24,13 +24,11 @@ Os usuários podem acessar a página de detalhes do produto ao clicar em um item
 A página exibe informações detalhadas do jogo selecionado, como título, descrição, preço e cores.
 
 #### Modal de Finalização de Compra
-Ao clicar em "Finalizar Compra" na página de detalhes do produto, os usuários são redirecionados para uma página de modal.
+Ao clicar em "Adicionar ao Carrinho" na página de detalhes do produto, os usuários são redirecionados para uma página de modal.
 O modal permite aos usuários escolher entre continuar com o pedido ou finalizar a compra.
-Se os usuários optarem por finalizar a compra, serão solicitadas informações pessoais, como nome, forma de pagamento, endereço de entrega, etc.
 
-#### Página de Rastreamento de Pedido
-Após finalizar a compra, os usuários são redirecionados para a página de rastreamento de pedido.
-Nessa página, é exibido um número de pedido fictício e uma imagem dos correios, que serve como link para o site dos correios para rastreamento do pedido simulado.
+#### Modal de Dados do Usuário
+Ao clicar em "Finalizar Compra" no primeiro Modal, os usuários são redirecionados para outra página de modal onde são solicitadas informações pessoais, como nome, forma de pagamento, endereço de entrega, etc.
 
 ## Instalação e Execução
 - Clone o repositório para sua máquina local.
