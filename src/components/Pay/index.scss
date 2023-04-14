@@ -1,0 +1,143 @@
+@use "../../assets/sass/variables" as *;
+
+
+.modal-pay {
+    width: 204.9vh;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container {
+    background-color: #fff;
+    color: #000;
+    width: 40%;
+    height: 51%;
+    border-radius: 15px;
+    display: flex;
+    
+}
+
+.pay-time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.pay-title {
+    padding-top: 5px;
+    padding-left: 45px;
+    padding-bottom: 10px;
+    
+    color: $contrast-color;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0em;
+}
+
+label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+    padding-left: 150px;
+    
+}
+
+.label-pay-type-name {
+    padding-top: 15px;
+    margin-left: -457px;
+    padding-bottom: 7px;
+}
+
+.label-pay-type-cpf {
+    padding-top: 15px;
+    margin-left: -470px;
+    padding-bottom: 7px;
+}
+
+.label-pay-type-adress {
+    padding-top: 15px;
+    margin-left: -513px;
+    padding-bottom: 7px;
+}
+
+.label-pay-type {
+    padding-top: 15px;
+    margin-left: -400px;
+    padding-bottom: 7px;
+}
+
+.input-pay {
+    width: 60%;
+    height: 7%;
+    border: 0;
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid #7A7A7A;
+    border-radius: 10px;
+
+    margin-left: 50px;
+    padding:9px
+}
+
+.confirm-order {
+    align-items: center;
+    background-color: #0c70f2;
+    width: 320px;
+    height: 47px;
+    border-radius: 10px;
+    border: 0;
+    margin-left: 50px;
+    margin-top: 40px;
+
+    color: $white;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.confirm-order:hover{
+    transition: all ease 0.5s;
+    background-color: black;
+    color: white;
+}
+
+.close-button-modal-2 {
+    left: 400px;
+    top: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    &::before,
+    &::after {
+        content: ' ';
+        position: absolute;
+        width: 2.5px;
+        height: 24px;
+        background-color: #000;
+    }
+    &:before {
+        transform: rotate(45deg);
+    }
+    &:after {
+        transform: rotate(-45deg);
+    }
+  }

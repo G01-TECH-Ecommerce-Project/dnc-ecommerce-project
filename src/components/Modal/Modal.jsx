@@ -1,6 +1,8 @@
 import "./index.scss";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Pay from "../Pay/Pay";
+
 
 const Modal = ({ data, onClose = () => {} }) => {
   const [isModalVisible, setIsModalVisible] = useState(false);
