@@ -19,3 +19,29 @@
     transform: translateX(-147%);
   }
 }
+
+@media (max-width: 480px){
+  .carrosel {
+    width: 100%;
+    outline: 2px solid black;
+    overflow: hidden;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+  }
+  
+  .container-banner {
+    position: relative;
+    animation: slide 15s infinite ease-out;
+    display: flex;
+    height: 30vh;
+  }
+  
+  @keyframes slide {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-900%);
+    }
+  }
+  
+}

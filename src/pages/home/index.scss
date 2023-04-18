@@ -13,3 +13,17 @@
             padding: 2em 5em;
     }
 }
+
+@media (max-width: 480px){
+
+    
+.home{
+    &__productCard {
+        display:flex;
+        flex-wrap: wrap;
+        padding: 0;
+        justify-content: center;
+    }
+}
+
+}

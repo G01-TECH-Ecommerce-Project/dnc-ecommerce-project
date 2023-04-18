@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./index.scss";
 
 const Pay = ({ onClose = () => {} }) => {
-  const [isModalVisible, setIsModalVisible] = useState(false);
+
   return (
     <div className="modal-pay">
       <div className="container__pay">
