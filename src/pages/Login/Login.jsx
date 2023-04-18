@@ -1,5 +1,4 @@
 import './index.scss';
-import HeaderMenu from '../../components/HeaderMenu/HeaderMenu';
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/imgs/logo.png';
 

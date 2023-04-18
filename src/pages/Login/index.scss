@@ -105,3 +105,38 @@
         transition: 0.3s ease-in-out;
     }
 }
+
+@media (max-width: 480px) {
+
+    .header__login{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .section {
+        gap: 0.5em;
+        h1 {
+            margin-top: 1rem;
+            font-size: 25px;
+        }
+    
+        h2 {
+            margin: 2rem 0;
+            font-size: 18px;
+        }
+    }
+    
+    .form {
+        display: block;
+        padding: 0 1em;
+    
+        &__label {
+            font-size: 20px;
+        }
+
+        &__error {
+            width: 100%;
+        }
+    
+    }
+}

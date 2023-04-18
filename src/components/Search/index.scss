@@ -22,3 +22,12 @@
     font-size: 1rem;
   }
 }
+
+@media (max-width: 480px) {
+  .search {
+    input {
+      width: 75vw;
+    }
+  }
+  
+}
