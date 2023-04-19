@@ -110,3 +110,62 @@
         transform: rotate(-45deg);
     }
   }
+
+  @media (max-width: 480px) {
+    .modal-pay {
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        
+    }
+    
+    .container__pay {
+        padding: 1em 1em;
+        height: 47%;
+        width: 98%;
+    }
+    
+    .formPay {
+        gap: 0.9em;
+    
+        &__title {
+            font-size: 2em;
+            font-weight: 700;
+        }
+    
+        &__container{
+    
+            &-label {
+                font-size: 18px;
+                text-align: left;
+            }
+        
+            &-input {
+                width: 350px;
+                height: 45px;
+            }
+        }
+    
+        &__button {
+            width: 350px;
+        }
+        
+        &__button:hover{
+        }
+    }
+    
+    
+    
+    .close-button-modal-2 {
+        left: 210px;
+        top: 15px;
+        &::before,
+        &::after {
+        }
+        &:before {
+        }
+        &:after {
+        }
+      }
+
+
+  }
