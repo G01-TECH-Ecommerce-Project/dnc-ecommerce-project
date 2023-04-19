@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .container {
@@ -29,7 +29,7 @@
     align-self: center;
 }
 
-.cart{
+.cart {
     color: $contrast-color;
     text-align: left;
 }
@@ -42,6 +42,7 @@
     padding-bottom: 15px;
 
 }
+
 .item-price {
     padding: 0.5em 0;
 }
@@ -50,20 +51,20 @@
     padding-bottom: 0.5em;
 }
 
-.colors-products{
+.colors-products {
     padding-bottom: 0.5em;
     display: flex;
-    gap: 1rem;  
+    gap: 1rem;
 }
 
 .buttons {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     width: 100%;
     padding-top: 2em;
 }
 
-.button-buy{
+.button-buy {
     background-color: #0c70f2;
     width: 350px;
     height: 50px;
@@ -100,6 +101,7 @@
     cursor: pointer;
     display: flex;
     position: relative;
+
     &::before,
     &::after {
         content: ' ';
@@ -108,27 +110,107 @@
         height: 24px;
         background-color: #000;
     }
+
     &:before {
         transform: rotate(45deg);
     }
+
     &:after {
         transform: rotate(-45deg);
     }
-  }
+}
 
-  .button-finish:hover{
+.button-finish:hover {
     transition: all ease 0.5s;
     background-color: black;
     color: white;
 }
 
-    .button-buy:hover{
+.button-buy:hover {
     transition: all ease 0.5s;
     background-color: black;
     color: white;
-    }
+}
 
 a {
     color: $white;
     text-decoration: none;
+}
+
+@media (max-width: 480px) {
+    .modal {
+        height: 140.3%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .container {
+        gap: 3em;
+        display: flex;
+        flex-direction: column;
+        height: 60%;
+        width: 98%;
+    }
+
+    .container-img {
+        display: flex;
+        justify-content: left;
+        align-self: center;
+    }
+
+    .cart {
+        text-align: center;
+    }
+
+    .item-title {
+    }
+
+    .item-price {
+    }
+
+    .item-name-color {}
+
+    .colors-products {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0.5em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-buy {
+        width: 280px;
+    }
+
+    .button-finish {
+        width: 280px;
+    }
+
+
+    .close-button {
+        left: 360px;
+        bottom: 360px;
+
+
+        &::before,
+        &::after {}
+
+        &:before {}
+
+        &:after {}
+    }
+
+    .button-finish:hover {}
+
+    .button-buy:hover {}
+
+    a {}
+
+
 }
