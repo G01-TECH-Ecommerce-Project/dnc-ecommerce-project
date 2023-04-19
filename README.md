@@ -1,10 +1,12 @@
 # E-commerce de Jogos e Video Games
 Este é um projeto de um e-commerce de jogos e video games utilizando a biblioteca React JS. O objetivo é criar uma aplicação web interativa que permita aos usuários realizar compras de jogos e video games, com várias funcionalidades, como login com verificação de input, página de produtos com um banner de fotos em movimento, detalhes do produto, modal de finalização de compra, preenchimento de informações pessoais.
+
 ## Tecnologias Utilizadas
 - React JS
 - React Router
 - HTML5
 - SASS
+- Media Query (responsividade) para Mobile (max 480px)
 
 ## Planejamento
 Dividimos o projeto em pages(views) e a partir disto fizemos a componentização para dividir uniformemente as tarefas. 
