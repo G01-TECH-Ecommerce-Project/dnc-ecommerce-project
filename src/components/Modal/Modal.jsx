@@ -10,7 +10,7 @@ const Modal = ({ data, onClose = () => {} }) => {
     <div className="modal">
       <div className="container">
         <img
-          src={data.imgPathDetail}
+          src={data.imgPath}
           alt={data.title}
           className="container-img"
         />

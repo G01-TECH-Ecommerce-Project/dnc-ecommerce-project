@@ -11,7 +11,7 @@ const ProductDetail = ({ data }) => {
         <div className="left__top">
           <img
             className="left__top-logo"
-            src={data.imgPathDetail}
+            src={data.imgPath}
             alt={data.title}
           />
           <p className="left__top-title">{data.title}</p>
