@@ -1,0 +1,169 @@
+@use "../../assets/sass/variables" as *;
+
+.product-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10em;
+  padding: 0 1em;
+
+  .left {
+    display: flex;
+    flex-direction: column;
+
+    &__top {
+      &-title {
+        font-size: 1.3rem;
+        padding-top: 2em;
+      }
+    }
+
+    &__bottom {
+      padding-top: 3em;
+
+      &-title {
+        padding-bottom: 1em;
+      }
+
+      &-description {
+        padding-bottom: 1rem;
+        border-bottom: 2px solid $contrast-color;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .right {
+
+    &__title {
+      display: inline-block;
+      margin: 0 auto;
+      font-weight: normal;
+      font-size: 2em;
+      border-bottom: 3px solid $contrast-color;
+      padding-bottom: 1rem;
+    }
+
+    &__detail {
+      display: flex;
+      flex-direction: column;
+      padding-top: 3em;
+
+      &-price {
+        font-size: 2rem;
+        padding-bottom: 0.5em;
+      }
+
+      &-color {
+        font-size: 1.2em;
+        font-weight: 600;
+        padding-bottom: 1rem;
+      }
+
+      &-colorblock {
+        display: flex;
+        gap: 0.5em;
+        padding-bottom: 8em;
+
+        span {
+          cursor: pointer;
+        }
+      }
+    }
+
+    &__button {
+      background: $contrast-color;
+      border-radius: 10px;
+      color: #fff;
+      border: 0;
+      cursor: pointer;
+      font-weight: 600;
+      width: 450px;
+      height: 65px;
+      font-size: 1.3rem;
+      align-self: center;
+
+      img {
+        padding-right: 0.5em;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px){
+
+  .product-detail {
+    flex-direction: column;
+    gap: 2em;
+    padding: 1.5em 0;
+  
+    .left {
+      margin-bottom: 1rem;
+      &__top {
+        &-logo{
+          padding-left: 2rem;
+        }
+        &-title {
+          font-size: 1.4rem;
+          padding-top: 1.5em;
+          text-align: center;
+        }
+      }
+  
+      &__bottom {
+        padding-top: 1.5em;
+        text-align: center;
+  
+        &-title {
+          padding-bottom: 1em;
+        }
+  
+        &-description {
+          padding-bottom: 1rem;
+        }
+      }
+    }
+  
+    .right {
+      text-align: center;
+
+      &__title {
+        font-size: 1.3em;
+        padding-bottom: 1rem;
+      }
+  
+      &__detail {
+        flex-direction: column;
+        padding-top: 1em;
+        text-align: center;
+
+        &-price {
+          padding-bottom: 0.5em;
+        }
+  
+        &-color {
+          font-size: 1.2em;
+          font-weight: 600;
+          padding-bottom: 1rem;
+        }
+  
+        &-colorblock {
+          justify-content: center;
+          gap: 0.5em;
+          padding-bottom: 1em;
+
+        }
+      }
+  
+      &__button {
+        width: 80vw;
+        font-size: 1.5rem;
+  
+        img {
+          padding-right: 0.5em;
+        }
+      }
+    }
+  }
+  
+}

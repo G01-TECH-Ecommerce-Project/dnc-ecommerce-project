@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Login from './Login/Login'
-import Home from './home/Home'
-import ProductInformation from './ProductInformation/ProductInformation'
+import Login from './pages/Login/Login';
+import Home from './pages/home/Home';
+import ProductInformation from './pages/ProductInformation/ProductInformation'
 import "./index.scss"
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { PRODUCTS_MOCK } from './mock/ProductMock'

@@ -1,1 +1,29 @@
 @use '../../assets/sass/variables' as *;
+
+.home{
+    background-color: $header-background;
+    justify-content: center;
+
+    &__productCard {
+
+            display: grid;
+            grid-template-columns: repeat(3, minmax(500px, 1fr));
+            justify-items: center;
+            gap: 1rem;
+            padding: 2em 5em;
+    }
+}
+
+@media (max-width: 480px){
+
+    
+.home{
+    &__productCard {
+        display:flex;
+        flex-wrap: wrap;
+        padding: 1em 0;
+        justify-content: center;
+    }
+}
+
+}
