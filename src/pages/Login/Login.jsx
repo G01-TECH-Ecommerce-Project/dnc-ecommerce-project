@@ -43,7 +43,7 @@ const Login = () => {
             </header>
             <section className='section'>
                 <h1>Acesse com seu login ou cadastre-se!</h1>
-                <h2>você pode entrar com seu CPF</h2>
+                <h2>Você pode entrar com seu CPF.</h2>
             </section>
             <form onSubmit={checkForm} className="form" id="form">
                 <div className="form__field">

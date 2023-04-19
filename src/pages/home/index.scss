@@ -7,7 +7,7 @@
     &__productCard {
 
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+            grid-template-columns: repeat(3, minmax(500px, 1fr));
             justify-items: center;
             gap: 1rem;
             padding: 2em 5em;
@@ -21,7 +21,7 @@
     &__productCard {
         display:flex;
         flex-wrap: wrap;
-        padding: 0;
+        padding: 1em 0;
         justify-content: center;
     }
 }

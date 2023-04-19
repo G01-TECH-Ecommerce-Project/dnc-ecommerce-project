@@ -3,14 +3,15 @@
 .modal {
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 1;
     background-color: rgba(0, 0, 0, 0.4);
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: auto;
 
 }
 
@@ -19,7 +20,7 @@
     color: #000;
     border-radius: 15px;
     display: flex;
-    padding: 4em 3.5em;
+    padding: 6em 8em;
     gap: 3em;
 }
 
@@ -139,41 +140,27 @@ a {
 
 @media (max-width: 480px) {
     .modal {
-        height: 140.3%;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(0, 0, 0, 0.5);
     }
 
     .container {
-        gap: 3em;
         display: flex;
         flex-direction: column;
-        height: 60%;
-        width: 98%;
+        width: 90%;
+        padding: 4em;
     }
 
     .container-img {
-        display: flex;
-        justify-content: left;
-        align-self: center;
+        max-width: 300px;
     }
 
     .cart {
         text-align: center;
     }
 
-    .item-title {
-    }
-
-    .item-price {
-    }
-
-    .item-name-color {}
-
     .colors-products {
-        display: flex;
         justify-content: center;
-        align-items: center;
     }
 
     .buttons {
@@ -185,32 +172,16 @@ a {
     }
 
     .button-buy {
-        width: 280px;
+        width: 80vw;
     }
 
     .button-finish {
-        width: 280px;
+        width: 80vw;
     }
 
 
     .close-button {
-        left: 360px;
-        bottom: 360px;
-
-
-        &::before,
-        &::after {}
-
-        &:before {}
-
-        &:after {}
+        left: 100%;
+        bottom: 320px;
     }
-
-    .button-finish:hover {}
-
-    .button-buy:hover {}
-
-    a {}
-
-
 }
